@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+:root{
+    --bgcolor:#f1f5fd;
+    --primary-color:#6f5de7;
+    --text-color:#828286;
+    --main-text-color:#333333;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #333333;
+}
+/* Navbar start */
+.navbar-bg{
+    background-color: var(--bgcolor);
+    padding: 2rem 0;
+    z-index: relative;
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+}
+.navbar li{
+    padding: 0.2rem;
+}
+
+.navbar li a{
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.navbar li a:hover{
+    color: var(--primary-color)!important;
+    text-shadow: 0 0.2rem 0.3rem rgba(183,171,255,0.5);
+}
+
+.btn-style{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+.btn-style:first-child{
+    margin-right: 2rem;
+}
+.btn-style:hover{
+    border: 0.1rem solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0.2rem 0.5rem rgba(183,171,255,0.5);
+}
+.btn-style-border{
+    border: 0.1rem solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    box-shadow: 0 0.2rem 0.5rem rgba(183,171,255,0.5);
+}
+.btn-style-border:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+}
+/* navbar ends */
+/* Header start */
+header{
+    background-color: var(--bgcolor);
+    min-height: 100vh;
+    width: 100%;
+}
+.main-hero-container{
+    height: 80vh;
+    display: flex;
+}
+.main-hero-container h1{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.main-hero-para{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 3rem 0 5rem 0;
+    font-weight: lighter;
+    width: 75%;
+}
+.main-hero-container h3{
+    font-weight: lighter;
+}
+/* right side */
+.main-herosection-images{
+    position: relative;
+}
+.main-herosection-images img{
+    width: 60%;
+    height: 75%;
+    margin-top: 10rem;
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.5rem;
+    position: absolute;
+}
+.main-herosection-images .main-hero-img2{
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    left: 55%;
+    top: -2%;
+    box-shadow: 0.8rem 0.8rem 0 rgba(0, 0, 0, 0.25);
+
+}
+/* Header end */
+
+/* Contact us start */
+.contactus-section{
+    margin: 15rem 0;
+}
+.contact-leftside img{
+    min-width: 80%;
+    min-height: 30rem;
+    height: auto;
+}
+.contact-input-field{
+    margin-bottom: 4rem;
+}
+.contact-rightside form .form-control{
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    height: 5rem;  
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    padding-left: 1rem;
+    font-weight: lighter;
+}
+.contact-rightside form .form-check-input{
+    width: 2rem;
+    height: 2rem;
+}
+.form-checkbox-style{
+    margin: 4rem 0;
+}
+.contact-rightside form .main-hero-para{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: lighter;
+    width: 75%;
+    padding: 0 2rem;
+}
+/* 
+         Error page
+*/
+#notfound{
+    position: relative;
+    height: 100vh;
+}
+#notfound .notfound{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    max-width: 767px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+}
+.notfound .notfound-404{
+    position: relative;
+    height: 180px;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+.notfound .notfound-404 h1{
+    left: 50%;
+    top: 40%;
+    font-size: 224px;
+    font-weight: 900;
+    margin: 0 0 0 -12;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.notfound .notfound-404 h2{
+    left: 0;
+    top: 110%;
+    right: 0;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    letter-spacing: 13px;
+    margin: 0;
+}
+/* Services */
+.title{
+    font-size: 2rem;
+    color: var(--main-text-color);
+    font-weight: bolder;
+    width: 75%;
+    
+}
+.detail{
+    font-size: 1.6rem;
+    color: var(--main-text-color);  
+    font-weight: bolder;
+    width: 75%;
+    
+}
+.cardtext1{
+    font-size: 1.4rem;
+    color: black;  
+    font-weight:lighter;
+    width: 75%;
+}
+.cardtext2{
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);  
+    font-weight: lighter;
+    width: 75%;
+}
+footer{
+    padding: 5rem 0;
+    background-color: #182334;
+    color: #fff;
+
+}
+footer h2{
+    color: #fff;
+}
+footer li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+footer li:hover{
+    color: var(--primary-color) !important;
+}
+/* Signup Form */
+.main_div{
+    background-image: url(../public/image/hero2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.box{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.box h1{
+    margin: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+.box .inputBox{
+    position: relative;
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+}
+
+.box .inputBox label{
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.box .submit{
+    background: transparent;
+    margin: 10px 150px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#label{
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    width: 90%;
+    margin: 10px 10px;
+    text-align: right;    
+}
